@@ -2,10 +2,10 @@
 
 #### _CMSC320_
 
-**Posted:** February 10, 2021; 
-**Due:** March 3, 2021
+**Posted:** February 11, 2021; 
+**Due:** March 4, 2021
 
-You've been hired by a new space weather startup looking to disrupt the space weather reporting business. Your first project is to provide better data about the top 50 solar flares recorded so far than that shown by your competitor [SpaceWeatherLive.com](https://www.spaceweatherlive.com/en/solar-activity/top-50-solar-flares). To do this, they've pointed you to [this messy HTML page](http://cdaw.gsfc.nasa.gov/CME_list/radio/waves_type2.html) from NASA ([available here also](http://www.hcbravo.org/IntroDataSci/misc/waves_type2.html)) where you can get the extra data your startup is going to post in your new spiffy site.
+You've been hired by a new space weather startup looking to disrupt the space weather reporting business. Your first project is to provide better data about the top 50 solar flares recorded so far than that shown by your competitor [SpaceWeatherLive.com](https://www.spaceweatherlive.com/en/solar-activity/top-50-solar-flares). To do this, they've pointed you to [this messy HTML page](http://cdaw.gsfc.nasa.gov/CME_list/radio/waves_type2.html) from NASA ([available here also (as a backup)](http://cmsc320.github.io/files/waves_type2.html)) where you can get the extra data your startup is going to post in your new spiffy site.
 
 Of course, you don't have access to the raw data for either of these two tables, so as an enterprising data scientist you will scrape this information directly from each HTML page using all the great tools available to you in Python. By the way, you should read up a bit on [Solar Flares](https://en.wikipedia.org/wiki/Solar_flare), [coronal mass ejections](https://www.spaceweatherlive.com/en/help/what-is-a-coronal-mass-ejection-cme), [the solar flare alphabet soup](http://spaceweather.com/glossary/flareclasses.html), [the scary storms of Halloween 2003](http://www.nasa.gov/topics/solarsystem/features/halloween_storms.html), and [sickening solar flares](https://science.nasa.gov/science-news/science-at-nasa/2005/27jan_solarflares).
 
@@ -13,7 +13,7 @@ Of course, you don't have access to the raw data for either of these two tables,
 
 ### Step 1: Scrape your competitor's data (10 pts)
 
-Use Python to scrape data for the top 50 solar flares shown in [SpaceWeatherLive.com](https://www.spaceweatherlive.com/en/solar-activity/top-50-solar-flares). Steps to do this are:
+Use Python to scrape data for the top 50 solar flares shown on SpaceWeatherLive. However, because SpaceWeatherLive now requires Javascript and Cookies to be enabled, I created a mirror: [cmsc320's mirror of the SWL's top 50 solar flares](https://cmsc320.github.io/files/top-50-solar-flares.html). Steps to do this are:
 
 1.  `pip install` or `conda install` the following Python packages: `beautifulsoup4, requests, pandas, numpy`; these are already in the environment if you are using Docker.
 2.  Use `requests` to get (as in, HTTP GET) the URL
@@ -264,9 +264,10 @@ Include code used to get the top 50 solar flares from the NASA table (be careful
 
 ### Question 2: Integration (15 pts)
 
-Write a function that finds the best matching row in the NASA data for each of the top 50 solar flares in the SpaceWeatherLive data. Here, you have to decide for yourself how you determine what is the best matching entry in the NASA data for each of the top 50 solar flares.
 
-In your submission, include an explanation of how you are defining best matching rows across the two datasets in addition to the code used to find the best matches. Finally, use your function to add a new column to the NASA dataset indicating its rank according to SpaceWeatherLive, if it appears in that dataset.
+For each of the top 50 solar flares in the SpaceWeatherLive data, find the best matching row from the NASA data.  Here, you have to decide for yourself how you determine what "best matching" means in this context.  Multiple flares may match to the same row from the NASA data, depending on your chosen method. Also note that the structure of your code should follow the description above (i.e. `for each in y:...`).
+
+In your submission, include an explanation of how you are defining best matching rows across the two datasets in addition to the code used to find the best matches. Finally, use your function to add a new column to the NASA dataset indicating its rank according to SpaceWeatherLive, if it appears in that dataset. If more than one SpaceWeatherLive entry "best matches", choose one and explain how you chose.
 
 ### Question 3: Analysis (10 pts)
 
