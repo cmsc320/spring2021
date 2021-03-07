@@ -1,8 +1,8 @@
 # Project 2
 
-Posted: March 5, 2021
+Posted: March 6, 2021
 
-Due: March 24, 2021
+Due: March 26, 2021
 
 In this project you will apply your data wrangling and exploratory data analysis skills to baseball data. In particular, we want to know how well did [Moneyball](https://en.wikipedia.org/wiki/Moneyball_(film)) work for the [Oakland A's](https://en.wikipedia.org/wiki/Oakland_Athletics). Was it worthy of a movie? (I'm sad to say that watching the movie is unlikely to help with completing the project).
 
