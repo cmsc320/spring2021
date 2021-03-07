@@ -65,6 +65,10 @@ The result would look something like:
 
 We want to understand how efficient teams have been historically at spending money and getting wins in return. In the case of Moneyball, one would expect that Oakland was not much more efficient than other teams in their spending before 2000, were much more efficient (they made a movie about it after all) between 2000 and 2005, and by then other teams may have caught up. Your job in this project is to see how this is reflected in the data we have.
 
+## Organization of the Project
+
+Each part of the project is split into two aspects: The _problems_ and the _questions_. The _problems_ are to be solved with code. This code should be documented and formatted in a manner that makes understanding the code feasible. The _questions_ are meant to be answered with prose. Notice that each question is worth more than each problem: A hastily written sentence is unlikely to earn full marks. 
+
 ## Part 1: Wrangling
 
 The data you need to answer these questions is in the Salaries and Teams tables of the database.
@@ -74,6 +78,8 @@ The data you need to answer these questions is in the Salaries and Teams tables 
 Using SQL compute a relation containing the total payroll and winning percentage (number of wins / number of games * 100) for each team (that is, for each teamID and yearID combination). You should include other columns that will help when performing EDA later on (e.g., franchise ids, number of wins, number of games).
 
 Include the SQL code you used to create this relation in your writeup. Describe how you dealt with any missing data in these two relations. Specifically, indicate if there is missing data in either table, and how the type of join you used determines how you dealt with this missing data. One note, for SQL you have to be mindful of integer vs. float division.
+
+I mentioned in the lectures that some folks find Pandas simpler to use than SQL, and that's true. However, there are cases where SQL is unavoidable. If the data is already stored in a database, you'd need to know at least enough SQL to get the data out.
 
 ## Part 2: Exploratory Data Analysis
 
@@ -173,16 +179,17 @@ Make a line plot with year on the x-axis and efficiency on the y-axis. A good se
 
 What can you learn from this plot compared to the set of plots you looked at in Question 2 and 3? How good was Oakland's efficiency during the Moneyball period?
 
+## Extra Credit (15 pts)
+
+The data used in this project is starting to get a bit old. The extra credit is ambitious: Can you create a new sqlite database that has the newest available data (up to 2020)? Explain your method with code and prose, if your explanation is reproducible, you will get the points. In order for a method to be reproducible you must provide code that can access the data online, mangle the data as necessary and the SQL necessary for creating the new sqlite database. Use the prose to describe where you found the data and what steps might be necessary to access that data (account creation/authentication/etc.). Any steps that require human intervention should be clearly described in prose.
+
+
 ## Submission
 
 Prepare a Jupyter notebook that includes for each Problem: (a) code to carry out the step discussed, (b) output showing the result of your code, and (c) a short prose description of how your code works. Remember, the writeup you are preparing is intended to communicate your data analysis effectively. Thoughtlessly showing large amounts of output in your writeup defeats that purpose.
 
 All axes in plots should be labeled in an informative manner. Your answers to any question that refers to a plot should include both (a) a text description of your plot, and (b) a sentence or two of interpretation as it relates to the question asked.
 
-Submit to ELMS at Project 2 Assignment Submission. You should include an .ipynb and a .pdf. Some students have found typesetting a PDF to be time-consuming. Make sure you are generating PDFs as you work on the project.
+Submit to ELMS at Project 2 Assignment Submission. You should include an .ipynb and a .pdf. Some students have found typesetting a PDF to be time-consuming. Make sure you are generating PDFs as you work on the project. (Note: we may switch the PDF submission to HTML in order to make it easier for student who have difficulties with PDF generation, but for now assume PDF)
 
 
-## Extra Credit (15 pts)
-
-
-The data in question is starting to get a bit old. The extra credit is ambitious: Can you create a new sqlite database that has the newest available data (up to 2020)? Explain your method, if your explanation is reproducible, you will get the points.
