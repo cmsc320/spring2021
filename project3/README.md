@@ -6,9 +6,9 @@ Due: April 28, 2021
 
 ## Part 1: Regression analysis of Gapminder data
 
-In this part of this project you will practice and experiment with linear regression using data from <a href="http://gapminder.org">gapminder.org</a>. We recommend spending a little time looking at material there, it is quite an informative site.
+In this part of this project you will practice and experiment with linear regression using data from [gapminder.org]("http://gapminder.org"). We recommend spending a little time looking at material there, it is quite an informative site.
 
-We will use a subset of data provided by gapminder provided by <a href="https://jennybryan.org/">Jennifer Bryan</a> described in it’s <a href="https://github.com/jennybc/gapminder">github page</a>.
+We will use a subset of data provided by gapminder provided by [Jennifer Bryan](https://jennybryan.org/) described in it’s [github page](https://github.com/jennybc/gapminder)
 
 Get the data from: https://github.com/jennybc/gapminder/blob/master/data-raw/08_gap-every-five-years.tsv
 
@@ -115,11 +115,9 @@ p_i(\beta^k) = \frac{e^{f_i(\beta^k)}}{1+e^{f_i(\beta^k)}}
 
 <img src="figs/eq3.png" alt="Equation 3" width="350"/></p>
 
-<p><strong>Problem 2</strong> <strong>(This problem is +5 points of extra credit.)</strong> <em>Derive the above update equation</em>. Write the derivation in a markdown ipynb cell. </p>
-
-<p><strong>Problem 3</strong> <em>Implement the gradient descent algorithm (either batch or stochastic versions) for multiple logistic regression.</em> I.e., modify your code in problem 1 for the logistic regression update equation.</p>
+<p><strong>Problem 2</strong> <em>Implement the gradient descent algorithm (either batch or stochastic versions) for multiple logistic regression.</em> I.e., modify your code in problem 1 for the logistic regression update equation.</p>
 <p>Make sure you include in your submission writeup, which version of the algorithm you are solving (stochastic or batch), and make sure to comment your code to help us understand your implementation.</p>
-<p><strong>Problem 4</strong> To test your programs, simulate data from the linear regression and logistic regression models and check that your implementations recover the simulation parameters properly.</p>
+<p><strong>Problem 3</strong> To test your programs, simulate data from the linear regression and logistic regression models and check that your implementations recover the simulation parameters properly.</p>
 
 <p>Use the following functions to simulate data for your testing:</p>
 
@@ -160,21 +158,15 @@ log_gen_data_y = [0 if i>0 else 1 for i in dump_y]}</code></pre>
 
 <div id="handing-in" class="section level2">
 
-<h3>Handing in:</h3>
+### Handing in:
 
-<ol style="list-style-type: decimal">
-<li><p>For Problems 1 and 3 include your code in the writeup. Make sure they are commented and that the code is readable in your final writeup (e.g., check line widths).</p></li>
-<li><p>For Problem 2, include the derivation of the gradient descent update in the writeup</p></li>
-<li><p>For Problem 4, make sure you run the provided code and include the output in the writeup.</p></li>
-<li><p>For the next section organize your writeup as follows:</p></li>
-</ol>
-<ol style="list-style-type: lower-alpha">
-<li><p>Describe the dataset you are using, including: what is the outcome you are predicting (remember this should be a classification task) and what are the predictors you will be using.</p></li>
-<li><p>Include code to obtain and prepare your data as a dataframe to use with your three classification algorithms. In case your dataset includes non-numeric predictors, include the code you are using to transform these predictors into numeric predictors you can use with your logistic regression implementation.</p></li>
-<li><p>Specify the two additional algorithms you have chosen in part (b), and for algorithms that have hyper-parameters specify the method you are using for model selection.</p></li>
-<li><p>Include all code required to perform the 10-fold cross-validation procedure on your three algorithms.</p></li>
-<li><p>Write up the result of your 10-fold cross-validation procedure. Make sure to report the 10-fold CV error estimate (with standard error) of each of the three algorithms. Also report on the result of the <em>two</em> paired t-tests comparing your logistic regression algorithm with your chosen two algorithms.</p></li>
-</ol>
+ * As usual, we expect a Notebook (in PDF, or _static_ HTML form) where each problem and question are addressed as code and/or prose (where appropriate). We expect the code to be commented (the _how_) and the prose to explain _what_ and _why_.
+ * For the part that requires you to choose your own dataset, organize your writeup as follows:</p></li>
+    - Describe the dataset you are using, including: what is the outcome you are predicting (remember this should be a classification task) and what are the predictors you will be using.</p></li>
+    - Include code to obtain and prepare your data as a dataframe to use with your three classification algorithms. In case your dataset includes non-numeric predictors, include the code you are using to transform these predictors into numeric predictors you can use with your logistic regression implementation.</p></li>
+    - Specify the two additional algorithms you have chosen in part (b), and for algorithms that have hyper-parameters specify the method you are using for model selection.</p></li>
+    - Include all code required to perform the 10-fold cross-validation procedure on your three algorithms.</p></li>
+    - Write up the result of your 10-fold cross-validation procedure. Make sure to report the 10-fold CV error estimate (with standard error) of each of the three algorithms. Also report on the result of the <em>two</em> paired t-tests comparing your logistic regression algorithm with your chosen two algorithms.</p></li>
 
 ## Extra Credit
 
