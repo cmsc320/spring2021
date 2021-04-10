@@ -175,3 +175,11 @@ log_gen_data_y = [0 if i>0 else 1 for i in dump_y]}</code></pre>
 <li><p>Include all code required to perform the 10-fold cross-validation procedure on your three algorithms.</p></li>
 <li><p>Write up the result of your 10-fold cross-validation procedure. Make sure to report the 10-fold CV error estimate (with standard error) of each of the three algorithms. Also report on the result of the <em>two</em> paired t-tests comparing your logistic regression algorithm with your chosen two algorithms.</p></li>
 </ol>
+
+## Extra Credit
+
+There are two opportunities for extra credit on this project:
+
+ * The first is straightforward: For each day the project is submitted early, you get 5 extra credit points, for a maximum of 15 points. 
+
+* Additionally, there will be opportunity for "Above and Beyond" points. These points are given at the discretion of the grader, _and can not be negotiated_. This is for students who show a significant depth of understanding and who explore the possibilities of the assignment beyond the descriptions set out in the instructions. For an example of an "Above and Beyond" submission for Project 2 see [this submission](files/project2_above_and_beyond.pdf) (there was no such extra credit for Project 2, this is just an example of what would get the points)
