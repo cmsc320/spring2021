@@ -175,3 +175,12 @@ There are two opportunities for extra credit on this project:
  * The first is straightforward: For each day the project is submitted early, you get 5 extra credit points, for a maximum of 15 points. 
 
 * Additionally, there will be opportunity for "Above and Beyond" points. These points are given at the discretion of the grader, _and can not be negotiated_. This is for students who show a significant depth of understanding and who explore the possibilities of the assignment beyond the descriptions set out in the instructions. For an example of an "Above and Beyond" submission for Project 2 see [this submission](files/project2_above_and_beyond.pdf) (there was no such extra credit for Project 2, this is just an example of what would get the points)
+
+### Final Project Groups
+
+If you would like to form a group for the final project, you must do one of the following:
+
+  * Decide on a group by April 16th and email JMCT with `[CMSC320 GROUP]` as the subject line (no more no less)
+  * If you want to be put into a group, you should email JMCT with `[CMSC320 LFG]` as the subject line by April 14th.
+
+I will perform a search for _those exact subject lines_, and use that to populate the gradebook.
