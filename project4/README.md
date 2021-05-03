@@ -22,9 +22,22 @@ arrest_table = arrest_table[pandas.notnull(arrest_table["Location 1"])]
 arrest_table["lat"], arrest_table["long"] = arrest_table["Location 1"].str.split(",").str
 arrest_table["lat"] = arrest_table["lat"].str.replace("(", "").astype(float)
 arrest_table["long"] = arrest_table["long"].str.replace(")", "").astype(float)
+```
 
+The first few rows should look something like this:
+
+```{python}
 arrest_table.head()
 ```
+
+
+|   | arrest   |  age | race | sex |  arrestDate | arrestTime | arrestLocation  | incidentOffense  | incidentLocation  | charge  | chargeDescription   | district  | post  | neighborhood  | Location 1 |  lat   | long |
+|   | --- |  --- | --- | --- |  --- | --- | ---  | ---  | ---  | ---  | ---   | ---  | ---  | ---  | --- |  ---   | --- |
+|1  |11127013.0 | 37 | B | M | 01/01/2011 | 00:01:00  | 000 Wilkens Ave  | 79-Other              | Wilkens Av & S Payson St  | 1 1425 | Reckless Endangerment || Hand Gun Violation | SOUTHERN     | 934.0 | Carrollton Ridge       | (39.2814026274, -76.6483635135) | 39.281403 | -76.648364 |
+|2  |11126887.0 | 46 | B | M | 01/01/2011 | 00:01:00  | 800 Mayfield Ave | Unknown Offense       | NaN                       | NaN    | Unknown Charge                              | NORTHEASTERN | 415.0 | Belair-Edison          | (39.3227699160, -76.5735750473) | 39.322770 | -76.573575 |
+|3  |11126873.0 | 50 | B | M | 01/01/2011 | 00:04:00  | 100 Ashburton St | 79-Other              | 2100 Ashburton St         | 1 1106 | Reg Firearm:Illegal Possession || Hgv       | WESTERN      | 735.0 | Panway/Braddish Avenue | (39.3117196723, -76.6623546313) | 39.311720 | -76.662355 |
+|4  |11126968.0 | 33 | B | M | 01/01/2011 | 00:05:00  | 000 Wilsby Ave   | Unknown Offense       | 1700 Aliceanna St         | NaN    | Unknown Charge                              | NORTHERN     | 525.0 | Pen Lucy               | (39.3382885254, -76.6045667070) | 39.338289 | -76.604567 |
+
 
 ## Part 2: Making a Map
 
