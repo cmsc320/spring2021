@@ -35,7 +35,9 @@ makes it very easy to use from within a Jupyter Notebook and to access your
 python data-structures (e.g.  Pandas DataFrames).
 
 The documentation for Folium can be found on its official website:
-[https://leafletjs.com/](https://leafletjs.com/).
+[https://python-visualization.github.io/folium/](https://python-visualization.github.io/folium/).
+You will likely need to consult the documentation in order to complete this
+project.
 
 The following code will create a map centered on Baltimore:
 
@@ -50,8 +52,8 @@ OpenStreetMap.
 
 ## Part 3: Combining Parts 1 and 2
 
-Use
-[markers](https://python-visualization.github.io/folium/quickstart.html#Markers)
+Use markers, [as described in the
+documentation](https://python-visualization.github.io/folium/quickstart.html#Markers)
 to mark information from `arrest_table`. The task for this project is to come
 up with a way to differentiate the data marked on the map. If all arrests use
 the same marker type, the map will be near meaningless. The columns in
