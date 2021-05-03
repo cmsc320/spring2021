@@ -31,7 +31,7 @@ arrest_table.head()
 ```
 
 
-|   | arrest   |  age | race | sex |  arrestDate | arrestTime | arrestLocation  | incidentOffense  | incidentLocation  | charge  | chargeDescription   | district  | post  | neighborhood  | Location 1 |  lat   | long |
+| | arrest |  age | race | sex |  arrestDate | arrestTime | arrestLocation  | incidentOffense  | incidentLocation  | charge  | chargeDescription   | district  | post  | neighborhood | Location 1 | lat | long |
 |   | --- |  --- | --- | --- |  --- | --- | ---  | ---  | ---  | ---  | ---   | ---  | ---  | ---  | --- |  ---   | --- |
 |1  |11127013.0 | 37 | B | M | 01/01/2011 | 00:01:00  | 000 Wilkens Ave  | 79-Other              | Wilkens Av & S Payson St  | 1 1425 | Reckless Endangerment || Hand Gun Violation | SOUTHERN     | 934.0 | Carrollton Ridge       | (39.2814026274, -76.6483635135) | 39.281403 | -76.648364 |
 |2  |11126887.0 | 46 | B | M | 01/01/2011 | 00:01:00  | 800 Mayfield Ave | Unknown Offense       | NaN                       | NaN    | Unknown Charge                              | NORTHEASTERN | 415.0 | Belair-Edison          | (39.3227699160, -76.5735750473) | 39.322770 | -76.573575 |
